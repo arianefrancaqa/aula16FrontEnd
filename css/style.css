@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html {
+    font-size: 18px;
+}
+
+.formulario {
+    background-image: linear-gradient(to right, #dbdfe5, #c4cce2, #b5b7dd, #aea1d5, #ae88c7);
+    border-radius: 10px;
+    margin: auto;
+    width: 70%;
+    margin-top: 10%;
+    border: 1px solid #e0c3fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dados {
+    border: 1px solid #e0c3fc;
+    border-radius: 10%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+input[type=text], [type=email], [type=tel] {
+    height: 30px;
+    width: 100%;
+    border: 1px solid #e0c3fc;
+    border-radius: 5%;
+    padding: 5%;
+    outline: none;
+}
+
+.sobre textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}

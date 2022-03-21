@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <div class="formulario">
+        <h1>Cadastro de Programadores</h1>
+        <form action="" method="post">
+            <fildset class="dados">
+
+                <legend>Dados Pessoais</legend>
+
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Informe seu nome" required>
+                </div>
+
+                <div>
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Informe seu sobrenome">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email " id="email" placeholder="Informe seu email">
+                </div>
+
+                <div>
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" name="tel " id="tel" placeholder="Informe seu telefone">
+                </div>
+
+                <div>
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input type="date" name="dataNascimento" id="dataNascimento"
+                        placeholder="Informe sua data de nascimento">
+                </div>
+
+            </fildset>
+
+            <fieldset class="dados">
+
+                <legend>Dados Profissionais</legend>
+                <div class="especialidade">
+                    <p>Informe qual a sua especialidade na área de desenvolvimento</p>
+
+                    <label for="esp-front">
+                        <input type="radio" name="esp-front" id="esp-front">Front-end</input>
+                    </label>
+
+                    <label for="esp-back">
+                        <input type="radio" name="esp-back" id="esp-back">Back-end</input>
+                    </label>
+
+                    <label for="esp-full">
+                        <input type="radio" name="esp-full" id="esp-full">Full-stack</input>
+                    </label>
+                </div>
+
+                <div class="experiencia">
+                    <label for="nivelExp">Informe seu nível de experiência</label>
+                    <select name="nivelExp" id="nivelExp">
+                        <optgroup label="Nível de experiência" id="nivelExp">
+                            <option value="estagio">Estágio</option>
+                            <option value="junior">Júnior</option>
+                            <option value="pleno">Pleno</option>
+                            <option value="senior">Sênior</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="modalidadeTrab">
+                    <label for="modalTrab">Modalidade de Trabalho:</label>
+
+                    <label for="remoto">
+                        <input type="checkbox" name="remoto" id="remoto"> Remoto
+                    </label>
+
+                    <label for="presencial">
+                        <input type="checkbox" name="presencial" id="presencial"> Presencial
+                    </label>
+
+                    <label for="hibrido">
+                        <input type="checkbox" name="hibrido" id="hibrido"> Híbrido
+                    </label>
+                </div>
+
+                <div class="sobre">
+                    <label for="sobre"> Nos conte sobre você
+                        <textarea name="sobre" id="sobre"></textarea>
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+</body>
+
+</html>
